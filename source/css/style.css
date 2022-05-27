@@ -10,6 +10,7 @@
   font-family: Roboto Condensed;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 li {
@@ -37,26 +38,26 @@ a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-preferred-size: auto;
-      flex-basis: auto;
+  flex-basis: auto;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .nav-list {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  grid-template-rows: 1fr;
   -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 52px;
   width: 364px;
 }
 
 .nav-item-active {
   -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 
 .nav-list,
@@ -139,9 +140,9 @@ a {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 700px;
-      grid-template-rows: 700px;
+  grid-template-rows: 700px;
   -ms-grid-columns: 960px 545px;
-      grid-template-columns: 960px 545px;
+  grid-template-columns: 960px 545px;
   grid-column-gap: 55px;
 }
 
@@ -162,15 +163,16 @@ a {
 
 .fairy-tail-pic {
   -webkit-animation-name: fade;
-          animation-name: fade;
+  animation-name: fade;
   -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
@@ -180,6 +182,7 @@ a {
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
@@ -265,9 +268,9 @@ a {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 813px;
-      grid-template-rows: 813px;
+  grid-template-rows: 813px;
   -ms-grid-columns: 296px 960px;
-      grid-template-columns: 296px 960px;
+  grid-template-columns: 296px 960px;
   grid-column-gap: 304px;
 }
 
@@ -352,15 +355,16 @@ a {
 
 .trip-pic {
   -webkit-animation-name: fade;
-          animation-name: fade;
+  animation-name: fade;
   -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  animation-duration: 1.5s;
 }
 
 @keyframes fade {
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
@@ -394,9 +398,9 @@ a {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 700px;
-      grid-template-rows: 700px;
+  grid-template-rows: 700px;
   -ms-grid-columns: 500px 600px;
-      grid-template-columns: 500px 600px;
+  grid-template-columns: 500px 600px;
   grid-column-gap: 100px;
 }
 
@@ -410,12 +414,11 @@ a {
 
 .hotel-galery {
   margin-top: 65px;
-  display: -ms-grid;
+
   display: grid;
-  -ms-grid-columns: (280px)[2];
-      grid-template-columns: repeat(2, 280px);
-  -ms-grid-rows: (150px)[2];
-      grid-template-rows: repeat(2, 150px);
+  grid-template-columns: repeat(2, 280px);
+
+  grid-template-rows: repeat(2, 150px);
   grid-column-gap: 39px;
   grid-row-gap: 50px;
 }
@@ -442,10 +445,10 @@ a {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 530px 371px;
-      grid-template-columns: 530px 371px;
+  grid-template-columns: 530px 371px;
   grid-column-gap: 70px;
   -ms-grid-rows: 28px 1fr;
-      grid-template-rows: 28px 1fr;
+  grid-template-rows: 28px 1fr;
   grid-row-gap: 50px;
   margin-top: 100px;
 }
@@ -517,18 +520,18 @@ a {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 383px 600px;
-      grid-template-columns: 383px 600px;
+  grid-template-columns: 383px 600px;
   grid-column-gap: 113px;
   -ms-grid-rows: 326px 1fr;
-      grid-template-rows: 326px 1fr;
+  grid-template-rows: 326px 1fr;
   grid-row-gap: 100px;
   margin-left: 466px;
 }
 
 .date-price {
   -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+  -ms-grid-row-align: end;
+  align-self: end;
 }
 
 .date-title,
@@ -608,10 +611,10 @@ footer {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 356px 595px;
-      grid-template-columns: 356px 595px;
+  grid-template-columns: 356px 595px;
   grid-column-gap: 139px;
   -ms-grid-rows: 527px;
-      grid-template-rows: 527px;
+  grid-template-rows: 527px;
   padding-top: 167px;
   padding-left: 519px;
   width: 1090px;
@@ -645,8 +648,8 @@ footer {
   line-height: 115px;
   margin: 0;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .contacts-tel {
@@ -691,7 +694,8 @@ footer {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 30px 30px 30px;
-      grid-template-columns: 30px 30px 30px;
+  grid-template-columns: 30px 30px 30px;
   grid-column-gap: 15px;
 }
+
 /*# sourceMappingURL=style.css.map */
